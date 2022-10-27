@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" cossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="style.css">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap" rel="stylesheet">
+<style>
+
+</style>
+</head>
+<body>
+<div class="px-3">
+<h1 class="py-5">Front End GDSC session</h1>
+
+<p>The grid-template property can be used as a shorthand property for the <em>grid-template-rows</em> and the <em>grid-template-columns</em> properties.</p>
+<p>This grid layout has three columns, and the first row is 150px high:</p>
+
+<div id="main-grid" class="grid-container">
+</div>
+</div>
+
+<script>
+  nums = [1,2,3,4,5,6]
+    for (let num in nums){
+
+      let div =  document.createElement("div")
+      div.className = "div-element"
+      div.textContent = num
+
+      document.getElementById("main-grid").appendChild(div)
+    }
+
+</script>
+</body>
+</html>
